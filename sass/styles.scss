@@ -36,6 +36,19 @@ a:hover, a:focus {
   color: $accent-color-hover;
   text-decoration: none;
 }
+button {
+  color: $accent-color;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-property: color, border-color, background-color;
+  transition-property: color, border-color, background-color;
+}
+button:hover, button:focus {
+  color: $accent-color-hover;
+  text-decoration: none;
+}
 body {
   font-family: $sans-serif;
   font-weight: $light;
@@ -293,7 +306,7 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, .88);
+  background-color: rgba(114, 78, 4, 0.88);
   z-index: 999;
   width: 100%;
 }
@@ -304,6 +317,18 @@ header {
   width: 1170px;
   margin: 0 auto;
   transition: padding 300ms ease-in-out;
+
+  .b1 {
+    border: none;
+    background: none;
+    color: $txt-light;
+    text-transform: uppercase;
+    font-size: $nav-font-size;
+    cursor: pointer;
+    &:hover {
+      color: $accent-color;
+    }
+  }
 
   a {
     color: $txt-light;
@@ -318,7 +343,7 @@ header {
     display: inline-block;
   }
   .logo img {
-    height: 19px;
+    height: 25px;
   }
   ul.primary-nav {
     margin: 0 0 0 75px;
@@ -355,7 +380,7 @@ header {
   }
   .header-nav {
     display: inline-block;
-  }
+      }
   .member-actions {
     position: absolute;
     right: 0;
@@ -788,7 +813,7 @@ Google map
 RSVP form
 ========================================================================== */
 .rsvp {
-  padding-bottom: 140px;
+  padding-bottom: 50px;
   .rsvp-form {
     .rsvp-btn {
       padding: 15px 0;
@@ -827,6 +852,7 @@ RSVP form
         top: 50%;
         transform: translateY(-50%);
         margin-left: 20px;
+        color: #ff8c00;
       }
       input {
         padding-left: 68px;
@@ -884,7 +910,7 @@ footer {
     margin-top: -5px;
   }
   span.fa-heart {
-    color: #ff415c;
+    color: #ff8c00;
     font-size: 18px;
     margin: 0 2px;
   }

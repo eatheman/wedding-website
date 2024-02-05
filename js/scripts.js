@@ -214,11 +214,10 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+        if (MD5($('#invite_code').val()) !== 'e3d15c611a81685d8d7d1f9a9507fe60') {
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Oops!</strong> Your invite code is incorrect.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbyo0rEknln8LedEP3bkONsfOh776IR5lFidLhJFQ6jdvRiH4dKvHZmtoIybvnxpxYr2cA/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbyEciPb7gVwkKj7O6whDslDQC1IcQQ9iUGovNKw2bEpAR9TisiYJoZLcsJRQ6D1vqK6FQ/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
@@ -226,11 +225,12 @@ $(document).ready(function () {
                     } else {
                         $('#alert-wrapper').html('');
                         $('#rsvp-modal').modal('show');
+                        $('#rsvp-form')[0].reset();
                     }
                 })
                 .fail(function (data) {
                     console.log(data);
-                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Oops!</strong> Error encountered. Please try again later. '));
                 });
         }
     });
@@ -241,7 +241,7 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var location = {lat: 22.5932759, lng: 88.27027720000001};
+    var location = {lat: 15.139619594661827, lng: 120.56078651844533};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,
@@ -255,7 +255,7 @@ function initMap() {
 }
 
 function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
+    var la_fiesta = {lat: 15.139619594661827, lng: 120.56078651844533};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: la_fiesta,
