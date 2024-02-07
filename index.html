@@ -43,6 +43,7 @@
         }
     </script>
 
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Alex Brush'>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -66,11 +67,14 @@
                     <button class="b1"><a href="#map">Venue</a></button>
                     <button class="b1"><a href="#rsvp" class="btn-white btn-small">RSVP</a></button>
                 </div>
-                
-                <div class="logo"><a href="#"><img src="img/logo.jpg" alt="Logo"></a></div> 
+                <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div> 
             </div>
         </header>
     </section>
+    <div class="names">
+        <p class="name">Evert and Gessa</p>
+        <p class="dates">06.29.2024</p>
+    </div>
     <div class="down-arrow floating-arrow"><a href="#rsvp"><i class="fa fa-angle-down"></i></a></div>
 </section>
 
@@ -87,14 +91,15 @@
                     <div style="color: green" id="btn-show-content" class="toggle-map-content pointer-events-auto">
                         <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
                     </div>
+                    <div style="color: green" id="btn-show-direction" class="toggle-map-content pointer-events-auto">
+                        <i class="fa fa-angle-double-right"></i>&nbsp;&nbsp; <a style="color: green" href="https://maps.google.com/maps?ll=15.13962,120.560787&z=15&t=m&hl=en-US&gl=US&mapclient=apiv3&cid=6498278710097716252" target="_blank">Get direction</a>
+                    </div>
                 </div>
                 <div id="map-content" class="pointer-events-auto">
-                    <!-- <div class="row"> -->
-                        <div class="col-md-6">
-                            <h5>Grand Palazzo Royale</h5>
-                            <p>Royal Garden Estate Fil-Am Friendship Hwy, Angeles, 2009 Pampanga</p>
-                        </div>
-                    <!-- </div> -->
+                    <div class="col-md-6">
+                        <h5>Grand Palazzo Royale</h5>
+                        <p>Royal Garden Estate Fil-Am Friendship Hwy, Angeles, 2009 Pampanga</p>
+                    </div>
                     <div class="row text-center">
                         <div class="col-md-6" style="padding: 5px;">
                             <a class="btn btn-accent btn-small btn-success" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
@@ -135,7 +140,7 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
+                                                                 placeholder="Full name"
                                                                  required>
                             </div>
                         </div>

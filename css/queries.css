@@ -20,7 +20,8 @@
 @media screen and (max-width: 991px) {
     header {
         width: 90%;
-        padding-left: 25px;
+        padding-left: 10px;
+        padding-bottom: 15px;
     }
 
     /* .hero {
@@ -252,6 +253,23 @@
 
     footer .footer-links {
         margin: 120px 0 120px 0;
+    }
+
+    .names {
+        position: absolute;
+        top: 25%;
+        left: 32%;
+        font-family: 'Alex Brush'; 
+    }
+
+    .names .name {
+        color: #b4b4ab;
+        font-size: 25px;
+    }
+
+    .names .dates {
+        color: #b4b4ab;
+        font-size: 15px;
     }
 }
 
