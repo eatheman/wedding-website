@@ -263,12 +263,10 @@
     }
 
     .names .name {
-        color: #b4b4ab;
         font-size: 25px;
     }
 
     .names .dates {
-        color: #b4b4ab;
         font-size: 15px;
     }
 }
