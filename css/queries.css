@@ -235,7 +235,7 @@
     }
 
     #map-content-wrapper {
-        margin-bottom: 40px;
+        margin-bottom: 150px;
     }
     
     #map-content {
@@ -243,8 +243,12 @@
         padding: 35px;
     }
 
+    #map {
+        padding-top: 15px;
+    }
+
     .rsvp {
-        padding-top: 140px;
+        padding-top: 15px;
     }
 
     footer .social-share {
@@ -269,6 +273,17 @@
     .names .dates {
         font-size: 15px;
     }
+
+    #faqs .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /* .leftright:before  {
+        content: "<\00a0\00a0\00a0\00a0\00a0SWIPE\00a0\00a0\00a0\00a0\00a0>";
+        background-color: none;
+        font-size: 10px;
+        color: #ac8c90;
+    } */
 }
 
 @media screen and (max-width: 640px) {
@@ -285,7 +300,7 @@
         right: 10px; }
 
     #map-content-wrapper {
-        margin-bottom: 0;
+        margin-bottom: 150px;
     }
     
     footer ul.footer-group {

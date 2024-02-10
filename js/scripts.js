@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     /***************** Waypoints ******************/
 
     $('.wp1').waypoint(function () {
@@ -237,6 +236,16 @@ $(document).ready(function () {
                     $('#alert-wrapper').html(alert_markup('danger', '<strong>Oops!</strong> Error encountered. Please try again later. '));
                 });
         }
+    });
+
+    $('.image-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 3000
     });
 
 });

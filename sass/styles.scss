@@ -67,7 +67,7 @@ ul li {
   list-style: none;
 }
 section .header {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .section-padding {
   padding: $section-padding;
@@ -425,7 +425,7 @@ Social share buttons
 }
 
 /* ==========================================================================
-Intro
+Intro/FAQS
 ========================================================================== */
 .intro span.icon {
   font-size: 40px;
@@ -444,8 +444,7 @@ Intro
   width: 80%;
 }
 
-#intro {
-  padding-top: 40px;
+#faqs {
   img {
     width: 100%;
     height: auto;
@@ -454,6 +453,33 @@ Intro
 #intro p {
   text-align: center;
 }
+.slick-prev:before {
+  content: "<";
+  color: #ff8c00;
+  font-weight: bold;
+  font-size: 30px;
+}
+.slick-next:before {
+  content: ">";
+  color: #ff8c00;
+  font-weight: bold;
+  font-size: 30px;
+}
+.slick-dots li button:before {
+  font-size: 20px;
+  color: #ff8c00;
+}
+// .leftright {
+//   background-color: transparent;
+//   background-repeat: no-repeat;
+//   border: none;
+//   cursor: pointer;
+//   overflow: hidden;
+//   outline: none;
+//   margin-bottom: -10px;
+// }
+
+
 
 /* ==========================================================================
 Features-stack
