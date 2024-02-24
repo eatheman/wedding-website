@@ -46,6 +46,10 @@
         transition: opacity 0.5s, visibility 0s 0.5s;
     }
 
+    header .member-actions {
+        right: -20px;
+    }
+
     ul.member-actions {
         position: static;
     }
