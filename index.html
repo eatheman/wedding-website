@@ -51,8 +51,6 @@
     <link rel="stylesheet" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
@@ -87,7 +85,7 @@
 <section id="map" class="section-padding">
     <div class="text-center">
         <h3 style="color: #ff8c00">Venue</h3>
-        <p class="font-para-1">The ceremony will be held at Church of the Risen Christ, located within the vicinity of <strong>Grand Palazzo Royale</strong>.</p>
+        <p class="font-para-1">The ceremony will be held at the Church of the Risen Christ, located within the vicinity of <strong>Grand Palazzo Royale</strong>.</p>
     </div>
     <div id="map-canvas"></div>
     <div id="map-content-wrapper" class="container pointer-events-none">
@@ -181,6 +179,14 @@
                                                                 required>
                             </div>
                         </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-yes-no">
+                                <i class="fa fa-calendar-check-o"></i><label for="yes_no_radio">Are you attending?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="attending" value="Yes" checked>&nbsp;Yes&nbsp;&nbsp;</input>
+                                <input type="radio" name="attending" value="No">&nbsp;No&nbsp;&nbsp;</input>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
@@ -208,7 +214,6 @@
 <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
 <script src="js/jquery.fancybox.pack.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.min.js"></script>
 <script src="js/slick.min.js"></script>

@@ -278,6 +278,15 @@
         padding-left: 0px;
         padding-right: 0px;
     }
+    .slick-prev.slick-arrow {
+        position: absolute;
+        left: 0px;
+        z-index: 1;
+    }
+    .slick-next.slick-arrow {
+        position: absolute;
+        right: 0px;
+    }
     /* .leftright:before  {
         content: "<\00a0\00a0\00a0\00a0\00a0SWIPE\00a0\00a0\00a0\00a0\00a0>";
         background-color: none;
