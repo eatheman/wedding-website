@@ -86,27 +86,23 @@ $(document).ready(function () {
         e.preventDefault();
         var data = $(this).serialize();
         console.log(data);
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Please wait.</strong> We are saving your details.'));
+        $('#alert-wrapper').html(alert_markup('info', '<strong>Please wait...</strong>'));
         
-        if (MD5($('#invite_code').val()) !== '5d129a62bb864425d402136dbeb1895a') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Oops!</strong> Your invite code is incorrect.'));
-        } else {
-            $.post('https://script.google.com/macros/s/AKfycbwNRaFkA5tbeKV8dTHtNddPDrulgbEqECNDJ6VfwLdIaxBDLLIN2iPfjUs1We9z9_BROQ/exec', data)
-                .done(function (data) {
-                    console.log(data);
-                    if (data.result === "error") {
-                        $('#alert-wrapper').html(alert_markup('danger', data.message));
-                    } else {
-                        $('#alert-wrapper').html('');
-                        $('#rsvp-modal').modal('show');
-                        $('#rsvp-form')[0].reset();
-                    }
-                })
-                .fail(function (data) {
-                    console.log(data);
-                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Oops!</strong> Error encountered. Please try again later. '));
-                });
-        }
+        $.post('https://script.google.com/macros/s/AKfycbylvtxeUOr8muk3QcXjJXOtxwDa5b8c6mqiNBVkDYbzlfDzFWKUnNG0pCNDG-lU2AOc/exec', data)
+            .done(function (data) {
+                console.log(data);
+                if (data.result === "error") {
+                    $('#alert-wrapper').html(alert_markup('danger', data.message));
+                } else {
+                    $('#alert-wrapper').html('');
+                    $('#rsvp-modal').modal('show');
+                    $('#rsvp-form')[0].reset();
+                }
+            })
+            .fail(function (data) {
+                console.log(data);
+                $('#alert-wrapper').html(alert_markup('danger', '<strong>Oops!</strong> Error encountered. Please try again later. '));
+            });
     });
 
     $('.image-carousel').slick({

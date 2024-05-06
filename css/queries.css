@@ -50,6 +50,14 @@
         right: -20px;
     }
 
+    .member-actions .b1 {
+        margin-left: -5px;
+    }
+
+    .member-actions .b2 {
+        margin-left: -5px;
+    }
+
     ul.member-actions {
         position: static;
     }
